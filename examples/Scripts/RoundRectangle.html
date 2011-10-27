@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Rounded Rectangle</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../../lib/paper.js"></script>
+	<script type="text/paperscript" canvas="canvas">
+		var path;
+		var rect = new Rectangle([150, 150], [300, 300]);
+		project.currentStyle.fillColor = 'black';
+
+		function onFrame(event) {
+			if (path)
+				path.remove();
+			var size = Math.abs(Math.sin(event.count / 40)) * 150 + 10;
+			path = new Path.RoundRectangle(rect, size);
+			path.position = view.center;
+		}
+	</script>
+</head>
+<body>
+	<canvas id="canvas" resize></canvas>
+</body>
+</html>

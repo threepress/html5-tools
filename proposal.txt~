@@ -1,0 +1,41 @@
+"Will you read me a story?"                                      
+
+"Read you a story? What fun would that be? I've                  
+got a better idea: let's tell a story together."
+
+- PHOTOPIA (2000), Adam Cadre
+
+Transforming digital text into interactive narrative was one of the
+first impulses in computing. Limitations in graphics meant that the
+very first computer games, distributed via the early internet, were
+text-based (cf. Colossal Cave, 1975). Textual gaming had an initial
+commercial flowering, in part due to the heterogenity of computing
+platforms at the time -- there were dozens of consumer operating
+systems, each with a different set of severe constraints on memory,
+processor, and display.
+
+Text-based gaming offers a wealth of experimentation, but typing
+commands at a computer can be frustrating and is seen as an obsolete
+form of interaction.  Following the author/implementor model, in 2010 I
+commissioned an interactive piece from game designer Emily Short with
+two constraints: it must be primarily textual, but use a simple
+touch-based interface. 
+
+
+.First Draft of the Revolution, Emily Short (unpublished)
+image:figs/magic-user.png["First Draft of the Revolution,
+Emily Short",width=300,link="figs/magic-user.png"]
+
+_First Draft of the Revolution_ is an epistolary story set in a
+parallel history in which written documents are magically linked. The
+reader is presented with each letter in sequence, each sentence fading
+in slowly to reflect the "magical" transition between sender and
+receiver. The letters are at first incomplete or impetuous and cannot
+be sent as-is. User interface clues (such as red text) hint which passages need
+to be revised; tapping on those passages allows the reader to edit
+or delete them altogether. While the message of each letter is
+authorially fixed, readers control the tone and how much is revealed
+or hidden in each response. (At the time of this writing, _First
+Draft of the Revolution_ is still being finalized, but we intend to
+publish it as a free EPUB book: to put it distinctly among other
+books, not games.)

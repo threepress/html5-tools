@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Path Structure</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../../lib/paper.js"></script>
+	<script type="text/paperscript" canvas="canvas">
+	var yMiddle;
+	var segmentTexts = [];
+	var handleTexts = [];
+
+	var path = new Path();
+	path.fullySelected = true;
+
+	for (var i = 0; i < 3; i++) {
+		var text = new PointText();
+		text.content = i;
+		text.justification = 'center';
+		text.fontSize = 9;
+		segmentTexts.push(text);
+	}
+
+	for (var i = 0; i < 2; i++) {
+		var handleInText = new PointText();
+		handleInText.content = 'handleIn';
+		handleInText.justification = 'center';
+		handleInText.fontSize = 9;
+		handleTexts.push(handleInText);
+
+		var handleOutText = handleInText.clone();
+		handleOutText.content = 'handleOut';
+		handleTexts.push(handleOutText);
+	}
+
+	// Call onResize directly on execution to correctly position everything
+	onResize();
+
+	function onResize() {
+		var width = view.size.width;
+		var offset = width / 30;
+		var vector = new Point({
+		    	angle: 45,
+		    	length: width / 5
+			});
+		yMiddle = view.size.height / 2;
+		path.segments = [
+			[[offset, yMiddle], null, vector.rotate(-90)],
+			[[width / 2, yMiddle], vector.rotate(-180), vector],
+			[[width - offset, yMiddle], vector.rotate(90), null]
+		];
+		onMouseMove({
+			point: view.bounds.bottomRight
+		});
+	}
+
+	function onMouseMove(event) {
+		var point = event.point.clone();
+		// Constrain the event point, to not cut off the text:
+		if (point.y < 22) {
+			point.y = 22;
+		}
+		if (point.y > view.size.height - 24) {
+			point.y = view.size.height - 24;
+		}
+	    var delta = point - view.center;
+		for (var i = 0; i < path.segments.length; i++) {
+			segmentTexts[i].point = path.segments[i].point - [0, 10];
+		}
+		for (var i = 0; i < path.curves.length; i++) {
+			var curve = path.curves[i];
+			curve.handle1.y = curve.handle2.y = delta.y * (i % 2 ? 1 : -1);
+			var firstPoint = curve.point1 + curve.handle1;
+			var secondPoint = curve.point2 + curve.handle2;
+			var offset = (firstPoint.y < yMiddle ? [0, 10] : [0, -18]);
+			handleTexts[i * 2].point = secondPoint - offset;
+			handleTexts[i * 2 + 1].point = firstPoint - offset;
+		}
+	}
+	</script>
+</head>
+<body>
+	<canvas id='canvas' resize></canvas>
+</body>
+</html>

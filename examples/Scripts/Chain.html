@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Chain</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../../lib/paper.js"></script>
+	<script type="text/paperscript" canvas="canvas">
+		// Adapted from the following Processing example:
+		// http://processing.org/learning/topics/follow3.html
+
+		var path = new Path();
+		path.style = {
+			strokeColor: '#E4141B',
+			strokeWidth: 20,
+			strokeCap: 'round'
+		};
+		var size = 25;
+		var segments = path.segments;
+		var start = view.center / [10, 1];
+		for (var i = 0; i < size; i++)
+			path.add(start + new Point(i * 100, 0));
+
+		function onMouseMove(event) {
+			segments[0].point = event.point;
+			for (var i = 0; i < size - 1; i++) {
+				var nextSegment = segments[i + 1];
+				var position = path.segments[i].point;
+				var angle = (position - nextSegment.point).angle;
+				var vector = new Point({ angle: angle, length: 35 });
+				nextSegment.point = position - vector;
+			}
+			path.smooth();
+		}
+
+		function onMouseDown(event) {
+			path.fullySelected = true;
+			path.strokeColor = '#e08285';
+		}
+
+		function onMouseUp(event) {
+			path.fullySelected = false;
+			path.strokeColor = '#e4141b';
+		}
+	</script>
+</head>
+<body>
+	<canvas id="canvas" resize></canvas>
+</body>
+</html>

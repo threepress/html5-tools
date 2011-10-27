@@ -1,0 +1,247 @@
+WRITING AS A MECHANIC
+
+For a long time I've wanted to create an interactive piece about the
+process of writing. That's partly a reaction to the completely
+unrealistic way movies portray writing: the writer either "has
+writer's block" and stares angstfully at a typewriter, or else she is
+touched by the muse and types all night, and the result is a
+manuscript of instant brilliance.  
+
+Presumably the writers of these screenplays know from experience that
+that's not usually what happens, but the trope is powerful and
+persists anyway.  
+
+Perhaps the issue is that the real nature of writing -- as a process
+of revising, weighing word choices, evolving a text gradually over a
+long period around changing expectations of what it should even be
+saying -- is really very hard to narrate. It involves small,
+particular choices and a great deal of nuance.  
+
+I was also really interested in the way -- though this is rarely
+discussed in fiction at all -- the act of writing inevitably changes
+what you want to say; the way it can be a process, not just of setting
+down a concept already fully formed in the mind, but of discovering
+what it is you meant in the first place.  
+
+So when I considered mechanics for an interactive story about writing,
+the question immediately was what constraints I'd need to put on the
+writing in order to make it interesting. Writing is already active,
+but it wouldn't be a good interactive story to hand the reader a blank
+sheet of paper and say "go for it." Plainly it would need to be a
+story about *some particular person* writing *something specific* --
+that is, they'd need already to have some goals for what they were
+trying to communicate, and some reason why different choices might be
+better or worse.  
+
+More than that, the writing process would need to be cumulative, so
+that new possibilities opened up based on old choices -- as the writer
+thought of new examples or arguments or issues. 
+
+Next I needed a strong emotional context for what was being
+written. It would be a real challenge to do a compelling interactive
+story about writing a term paper or designing the manual for a new
+product, however important those tasks might be. And an interactive
+story about writing a poem seemed too inward, too navel-gazing. So I
+settled on the idea of an interactive epistolary story, so that the
+contents could be as personal and high-stakes as possible. 
+
+
+WRITING AS TEXTURE
+
+When I thought of the plot for "First Draft," the interactive
+epistolary mechanic seemed to fit for two reasons. 
+
+First, in "First Draft of the Revolution," the act and experience of
+writing is tied to aristocratic identity. These characters belong to a
+world in which literacy rates are not high, and their ability to write
+and communicate quickly is part of the magic-based luxury they enjoy
+in their lives.  
+
+The textured, deluxe presentation of the text invites the reader into
+that privileged experience. It encourages her to identify and feel
+complicit with the aristocratic characters, and their natural desire
+to protect the advantages they have -- both to establish a rapport,
+and to raise the tension later in the story when she discovers the
+poverty and limited options of the less privileged characters. 
+
+The second point is that interactively revising text involves
+*multiple simultaneous choices* which influence one another. Instead
+of asking the reader "then what did the character do?" or "what
+happened next?" -- as choose your own adventure stories do -- "First
+Draft of the Revolution" asks the reader to consider a number of
+simultaneous decisions, try them out, take some of them back, and
+finally settle on an acceptable version before moving on. 
+
+This pattern of choice-making is more contemplative and gentle-paced
+than one that stakes everything on single decisions. It also, I
+believe, engages the reader's faculties in a more creative way,
+because the decisions she's making are partly aesthetic. Does the
+letter read better this way or that way? How does it feel if the
+opening is antagonistic but the ending is endearing? What about vice
+versa?  
+
+Not all readers will necessarily focus on this aspect of the reading
+experience, and that's fine, but I wanted that aesthetic pleasure to
+be available to those who would value it. 
+
+
+THE CHANGING BRIEF
+
+Originally I imagined "First Draft" as a story with several possible
+outcomes, in which Juliette had already had an affair with the friar
+and was now being pressured to side with him against her aristocratic
+husband, and had to choose carefully what to say in her letters to
+both friar and husband in order to avoid exposure. 
+
+This changed when, as period research, I read the first part of
+_Delphine_ by Madame de Sta‘l -- a French epistolary novel set just
+after the period I was using. What leapt out at me was the characters'
+concern with religion and religious institutions alongside traditional
+status and social jockeying.  
+
+I had made my villain a friar early in the process (in fact this was
+already determined by the other work I'm doing in the same story
+universe), but I felt that maybe I hadn't given enough consideration
+to what that might mean for Juliette's interactions with him. Besides,
+I was writing a story that was not only about the tension between
+Juliette and her husband, but about the moral dimension of the
+aristocracy and its magic-using.  
+
+As my intentions for the work became more about these issues, I backed
+off the initial concept, which would have been about the *challenge*
+of getting to a solution that didn't kill Juliette or her husband. I
+decied that too much strategic thinking of that kind would distract
+the player from focusing on the thematic issues that I now wanted to
+explore; so I lightened up the use of consequences for Juliette's
+actions.  
+
+
+EXPRESSIVENESS AND CHARACTERIZATION
+
+By helping to revise their letters, the reader exposes who the
+characters are. She doesn't define or change them. Juliette, Henri,
+and the others are meant to have consistent personalities, and there's
+nothing the reader can do to alter this fact.  
+
+She can, however, see what constraints and concerns affect each
+character. Juliette and Henri each have things they're not willing to
+express to the other. The reader can also how far each one could be
+pushed (how assertive can Juliette be before her inner censor kicks
+in? how warm is Henri at his warmest?). 
+
+The sheer amount of correction each character does is significant as
+well. The story is partly about how Juliette comes to be able to
+assert herself against Henri's authority and the threats she sees
+around her. That shows up in the interaction as a greater range in
+what she's willing to put to paper. 
+
+By contrast, Henri's style of revision is at first more confident and
+less repetitive than Juliette's, in that he begins with a rigorously
+logical list of what he wants to accomplish: it's almost as though he
+views the task of writing to his wife as a design problem to be
+solved. This sets up the contrast later in the story when he loses
+emotional control over himself.  
+
+The two interaction arcs contrast. Over the course of the story,
+Juliette's thoughts about what to write become more focused on what
+she wants to achieve and less on what she fears will provoke Henri;
+Henri meanwhile becomes less purely instrumental in his approach. 
+
+All the same, Juliette and Henri are more alike than different. When
+we finally see a passage of text written by the mysterious friar, it's
+meant to be strikingly unlike the other writing in the story. It is
+coarse in both what it says and the way it's expressed: though he is
+in fact a skilled emotional manipulator, the friar does not belong to
+the same world as the protagonists, and his manner of writing is one
+of the most unmistakable signs of the fact.  
+
+The text drives this home by making the friar's text the only one that
+the reader cannot influence or control at all; he's a driving
+influence at the heart of the story but is not knowable in the same
+way as the other characters. 
+
+Presenting "First Draft" through interactive letter-writing allows me
+to focus on the interpersonal dynamics at a very granular level. I'm
+really interested in problems of how people communicate -- how they
+manipulate one another, how they assert control or social dominance,
+how they allow themselves to be vulnerable -- and I want to show those
+interactions rather than telling them. "Juliette agonized over whether
+to tell Henri she missed him" is a less immediate expression of the
+problem than actually showing what she's considering writing and what
+she decides to write instead. 
+
+At the same time, it would be very challenging (at least for me) to
+write a non-interactive short story that dwelled on these questions of
+word choice, and self-torment about exactly what was and wasn't
+appropriate to say, without it quickly becoming very tiresome for the
+reader. 
+
+[TANGENTIAL NOTE: This is not *completely* unique. Atlus'
+<em>Catherine</em> uses a text message composition system where the
+protagonist can cycle through several different texting options for
+each sentence before sending the completed text, and the combination
+of tonal choices affects the response he receives.  (Though I didn't
+play <em>Catherine</em> until many months after "First Draft" was
+designed; it was not an influence on my work.) Even in that example,
+though, the degree of variation in output is more limited than in
+"First Draft", and the focus is on making decisions rather than
+exploring a character's personality.] 
+
+
+EXPAND AND ADVANCE
+
+"First Draft of the Revolution" tries to avoid wearing out the
+reader's interest  by indicating clearly when the reader can choose to
+expand the story and when she can choose to advance.  
+
+"Expand vs advance" is terminology I picked up from improv
+theater. The Expand/Advance dichotomy appears in some form or other in
+lots of interactive stories and games, and there's a variety of
+terminology to talk about it, but I like Expand/Advance because it's
+clear, not genre-specific, and doesn't carry much judgment. 
+
+The idea is, essentially, that in developing a story interactively,
+you can either advance (tell the next thing that happens) or expand
+(provide more depth and explanation about the thing you're currently
+focused on). Some people would consider "expansion" the same thing as
+exposition, but exposition tends to be associated with tedious
+passages of explanation. Expansion might instead be the choice to
+dramatize an issue, a character relationship, or an emotion that would
+otherwise remain opaque to the reader. 
+
+A story that is all advancement likely doesn't provide enough
+information and emotional context to make the reader care very
+much. Traditional fables are often told in an all-advancement format,
+which makes them fast-paced, but doesn't give the reader much of an
+opportunity to identify with the characters or develop a deep
+understanding of the world in which they occur. 
+
+On the other hand, a story that doesn't advance fast enough for the
+reader's taste will seem to drag, and this is an even more serious
+problem for interactive stories than for conventional ones. The act of
+interaction can make a story more imminent and compelling when things
+are going well -- but when things go badly, it turns the story into
+*work*.  
+
+My aim in interactive stories, therefore, is 
+
+	1) to figure out exactly what information the reader *must*
+	experience by expansion in order to have the minimum
+	understanding and engagement with the plot 
+	2) to make other expansion strictly optional
+	3) to give the reader clear, consistent clues about which
+	options will lead to expansion and which will lead to
+	advancement 
+
+The form of "First Draft" is designed to support this structure. The
+"Send Letter" option at the bottom of the page always means that the
+story will advance: we'll find out what comes next. A few changes on
+each page are required, and this is because these represent the most
+basic information the reader must have in order to understand the
+meaning of the story. Other changes -- for instance, expanding out
+Juliette's description of the bastard son to give more details or more
+thoughts about his abilities -- are purely optional. They're intended
+to reward the reader who is interested in those topics, but not to
+delay one who isn't. 
+
+

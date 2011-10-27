@@ -1,0 +1,162 @@
+html {
+    overflow: hidden;
+    width: 1024px;
+    height: 768px;
+}
+body {
+    width: 1024px;
+    height: 768px;
+    text-rendering: optimizeLegibility;
+    font-family: "Adobe Caslon Pro";
+    font-variant-ligatures: common-ligatures additional-ligatures historical-ligatures;
+    overflow: hidden;
+    background: white;
+}
+h2, h3 {
+    font-weight: normal;
+}
+#container {
+/*    overflow: hidden; */
+}
+
+/* Each slide fits into the viewport, but will be positioned absolutely to appear wherever we want in the canvas */
+.slide {
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+/* Default text for a slide */
+.slide p {
+
+    font-size: 50px;
+    text-align: center;
+    padding: 2em;
+}
+
+.slideable {
+    -webkit-transition: -webkit-transform .5s ease-in-out, opacity .5s;
+}
+
+.slideable-fast {
+    -webkit-transition: -webkit-transform .3s ease-in-out, opacity .3s;
+}
+
+.more-endings {
+    margin-top: 5em;
+    font-size: 120px;
+}
+
+/* The current slide is the one visible in the viewport */
+.current-slide {
+}
+
+/* General styles */
+.center {
+    text-align: center;
+}
+.chunk {
+    font-family: "ChunkFive";
+}
+.comicsans {
+    font-family: "Comic Sans", "Marker Felt";
+}
+.bigcaslon {
+    font-family: "Big Caslon";
+}
+.c17 {
+    font-family: "Wyld"; 
+}
+.c64 {
+    font-family: "Commodore 64 Angled";
+}
+.c64 p, .c64 h1 {
+    text-align: left !important;
+    font-size: 40px; 
+    padding: 1em;
+
+}
+.d80s {
+    font-family: "YoureGone-Regular";
+}
+.league {
+    font-family: "LeagueGothicRegular";
+}
+
+.italic {
+    font-style: italic;
+}
+.visible {
+    visibility: visible;
+}
+/* Die hot pink */
+::-moz-selection { background: none; color: text-shadow: none; }
+::selection { background: none; text-shadow: none; }
+
+/* Fonts 
+
+@font-face {
+    font-family: "Commodore 64 Angled";
+    font-style: normal;
+    src: url("../fonts/Commodore Angled v1.2.ttf");
+
+}
+
+@font-face {
+    font-family: "Wyld";
+    font-style: italic;
+    src: url("../fonts/wyldi.ttf");
+}
+@font-face {
+    font-family: "Wyld";
+    font-weight: normal;
+    src: url("../fonts/wyld.ttf");
+}
+
+
+@font-face {
+    font-family: 'AdobeCaslonPro';
+    src: url('../fonts/ACaslonPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AdobeCaslonPro';
+    src: url('../fonts/ACaslonPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AdobeCaslonPro';
+    src: url('../fonts/ACaslonPro-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'YoureGone-Regular';
+    src: url('../fonts/youregone.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../fonts/League_Gothic-webfont.eot');
+    src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/League_Gothic-webfont.woff') format('woff'),
+         url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('../fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*/
