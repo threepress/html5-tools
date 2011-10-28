@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>First Draft of the Revolution: widget</title>
+    <style type="text/css">
+      iframe {
+       border: 1px solid gray;
+       margin: auto;
+       display: block;
+      }
+    </style>
+  </head>
+<body>
+
+  <h1>Example of an embeddable widget for an HTML presentation</h1>
+  <h2>(requires support for CSS3 transforms)</h2>
+  <p>Use right/left arrows to navigate. Only designed for Safari (Chrome will be slow).</p>
+  <iframe src="index.html" width="512" height="384">
+  </iframe>
+  <script src="js/libs/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('iframe').contents().find('html').css('-webkit-transform', 'scale(0.5) translate3d(-512px, -384px, 0)');
+    });
+  </script>
+</body>
+</html>
+
