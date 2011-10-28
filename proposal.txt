@@ -1,0 +1,53 @@
+  "Will you read me a story?"                                      
+
+  "Read you a story? What fun would that be? I've                  
+  got a better idea: let's tell a story together."
+
+  - PHOTOPIA (2000), Adam Cadre
+
+Transforming digital text into interactive narrative was one of the
+first impulses in computing. Limitations in graphics meant that the
+very first computer games, distributed via the early internet, were
+text-based (cf. Colossal Cave, 1975). 
+
+Text-based gaming offers a wealth of experimentation, but typing
+commands at a computer can be frustrating and is seen as an obsolete
+form of interaction.  While hypertext fiction has existed even
+before the web, it has largely been relegated to the academic world;
+such works are considered experimental, not meant to be enjoyed as
+narrative fiction. The interactive narratives that have found the
+widest audience appeal have been crude choose-your-own-adventure
+branching storylines. Many reject this conceit as a meaningful form of
+expression. "Art seeks to lead you to an inevitable conclusion, not a
+smorgasbord of choices," writes Roger Ebert in one of his many
+critiques of videogames as art. Ebert's overall position is probably
+short-sighted, but his point about the importance of authorial intent
+is valid and should be explored.
+
+Following the model of a content author paired with a technology 
+implementor, I commissioned an interactive piece from game designer
+Emily Short with three constraints: it must be primarily textual, have
+a clear authorial vision, and use a simple touch-based interface that
+could be implemented in an EPUB 3 device or web browser.
+
+_First Draft of the Revolution_ is an epistolary story set in a
+parallel history in which written documents are magically linked. The
+reader is presented with each letter in sequence, where each sentence
+fades in sequentially to reflect the "magical" transition between sender and
+receiver. The letters are at first incomplete (or impetuous) and cannot
+be sent as-is. User interface clues (such as red text) hint which passages need
+to be revised; tapping on those passages allows the reader to edit
+or erase them altogether. While the message of each letter is
+authorially fixed, readers control the tone and how much is revealed
+in each response (while learning the backstory and motivations behind
+each narrator's words). At the time of this writing, _First
+Draft of the Revolution_ is still being finalized, but we intend to
+publish it as a free EPUB 3 book: to put it distinctly among other
+books, not games. 
+
+The presentation will cover the above topics briefly: the problems
+inherent in interactive narrative, a demonstration of the work, and a
+release of an open source framework for creating further stories with
+the engine. I will argue that the joy of discovery, of uncovering
+hidden pathways through narrative, will be the key motivator for
+readers of future interactive works. 

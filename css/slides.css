@@ -1,0 +1,643 @@
+/* Default transition effect */
+#container {
+    -webkit-transition: -webkit-transform .75s ease-out;
+}
+
+/* Slide 1 */
+[data-slide="1"] {
+    top: 0px;
+    left: 0px;
+    background: none;
+}
+[data-slide="1"] h1 {
+    margin: .5em 0 20px 0;
+    font-size: 90px;
+    letter-spacing: -6px;
+    line-height: 1em;
+}
+[data-slide="1"] .drop {
+    font-size: 240px;
+    letter-spacing: -10px;
+    position: relative;
+    top: 55px;
+    font-style: normal;
+    left: 20px;
+    font-weight: 100;
+}
+[data-slide="1"] h2 {
+    margin: 130px 0 0 0;
+    font-size: 50px;
+} 
+[data-slide="1"] h3 {
+    font-size: 40px;
+    text-align: center;
+    margin: 120px 0 0 0;
+    padding:0;
+}
+[data-slide="1"] p {
+    margin:0;
+    padding:0;
+}
+[data-slide="1"] #thanks {
+    visibility: hidden;   
+    position: absolute;
+}
+
+/* Slide 2 */
+[data-slide="2"] {
+    visibility: visible;
+    background: none;
+}
+[data-slide="2"] .date,
+[data-slide="2"] .date-later {
+    font-size: 500px;
+    color: gray;
+    display: inline-block;
+    position: absolute;
+    -webkit-transform-origin: center center;
+    -webkit-transition: -webkit-transform .5s, opacity .5s;
+    z-index: 1;
+    -webkit-transform: scale(1) rotate(-90deg) translate3d(1600px, -1624px, 0);
+    text-shadow: 0 0 20px gray;
+
+}
+[data-slide="2"] .date-later {
+    opacity: 0;
+}
+
+/* Transitioned form: zoom out and slide up */
+#container.slide2 {
+    /* Zoom out */
+    -webkit-transform: scale(0.5) rotate(90deg) translate3d(250px, -1330px, 0); 
+}
+
+/* Date rotates itself */
+#container.slide2 .date,
+#container.slide2 .date-later {
+    -webkit-transform: rotate(-90deg) translate3d(0,0,0);
+}
+/* Visible text drops down */
+#container.slide2 .w1,
+#container.slide2 .w2,
+#container.slide2 .w3,
+#container.slide2 .w4 {
+    -webkit-transform: translate3d(1675px, 0, 0);
+}
+#container.slide3 .date-later {
+    opacity: 1;
+}
+#container.slide3 .date {
+    opacity: 0;
+}
+#container.slide4 {
+
+}
+#container.slide4 [data-slide="4"] {
+    -webkit-transform: rotate(-90deg) translate3d(-1350px, 400px, 0) scale(2); 
+}
+#container.slide5 [data-slide="5"] {
+    -webkit-transform: translate3d(0, 0, 0);
+}
+[data-slide="5"] {
+    -webkit-transition: -webkit-transition .2s;
+}
+[data-slide="5"] p {
+    text-align: left;
+}
+
+#container.slide5 [data-slide="5"] p {
+    -webkit-transform: translate3d(100px, 400px, 0);
+}
+/* Rotate 'one or more' into view */
+#container.slide5 {
+    -webkit-transform: rotate(0deg) translate3d(-170px, -450px, 0);    
+}
+/* Keep the date in place */
+#container.slide5 .date-later {
+    -webkit-transform: rotate(0) translate3d(-750px,-1000px,0) scale(0.1);
+}
+#container.slide6 {
+    -webkit-transform: none;
+}
+#container.slide5 [data-slide="4"] {
+    opacity: 0;
+}
+/* After this, dump the date */
+#container.slide7 .date-later {
+    display: none;
+}
+
+#container.slide6 [data-slide="1"] {
+    opacity: 0;
+}
+/* C64 colors */
+.c64bg {
+    text-align: center;
+    background: black;
+    -webkit-transition: -webkit-transform .3s;
+    width: 1024px;
+    height: 768px;
+    top: -768px;
+    position: absolute;
+}
+.c64bg img {
+    margin: auto;
+    display: block;
+    margin-top: 400px;
+}
+#container.slide8 [data-slide="6"] {
+    opacity: 0;
+}
+#container[data-currentslide="7"] .c64bg {
+    -webkit-transform: translate3d(0, 500px, 0);
+}
+#container[data-currentslide="8"] .c64bg {
+    -webkit-transform: translate3d(0, 768px, 0);
+}
+[data-slide="8"] {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform .5s, opacity 4s;
+    -webkit-transition-delay: 2s;
+    opacity: 0;
+    background-color: white;
+    color: white;
+}
+#container[data-currentslide="8"] .slide {
+    background-color: black;
+    opacity: 1;
+}
+/* Fix in place to avoid rendering artifact in #article1 */
+#map1 {
+    position: absolute;
+    top: 1024px;
+}
+#container.slide9 #article1, #container.slide10 #article1, #container.slide11 #article1 {
+    opacity: 1;
+}
+#container.slide10 #map1, #container.slide11 #map1 {
+    -webkit-transform: translate3d(0, -950px, 0);
+    opacity: 1;
+}
+#container.slide11 #map2 {
+    -webkit-transform: translate3d(0, -500px, 0);
+    opacity: 1;
+}
+
+cite {
+    font-size: 40px;
+    text-align: right;
+}
+cite a {
+    color: black;
+}
+[data-slide="12"] #adventure-date {
+    color: gray;
+    display: inline-block;
+    font-style: normal;
+    -webkit-transition: -webkit-transform .75s ease-out;
+    letter-spacing: 2px;
+}
+#container.slide13 #adventure-date {
+    -webkit-transform: translate3d(0, 400px, 0);
+}
+
+/* The images in the background should become invisible from here on */
+#container.slide12 [data-slide="9"] {
+    visibility; hidden;
+    opacity: 0;
+}
+#container.slide13 {
+    -webkit-transform: translate3d(0, -600px, 0);
+}
+
+/* Keep the more endings text for the current slide and its transition to the myst image,
+   then drop it so it's not visible when the slide moves on.
+ */
+.more-endings {
+    -webkit-transition: -webkit-transform .2s, opacity .1s; 
+}
+
+#container[data-currentslide="13"] .more-endings {
+    opacity: 1;
+}
+/* Turn off the quotation when we're ready to slide back up */
+#container.slide14 [data-slide="12"] blockquote {
+    opacity: 0;
+}
+#container.slide14 {
+    -webkit-transform: none;
+}
+#container.slide16 {
+    -webkit-transform: none;
+}
+#container.slide16 .more-endings {
+    opacity: 0;
+}
+
+[data-slide="15"] p {
+    top: 400px;
+    -webkit-transition: color;
+    -webkit-transition-delay: 2s;
+    color: black;
+}
+[data-slide="15"] img[src="figures/myst.jpg"] {
+    -webkit-transition: opacity 0.5s;
+    -webkit-transition-delay: 2s;
+    opacity: 0;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0)), color-stop(0.1, rgba(0,0,0,1)));
+}
+
+#myst-date {
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transition-delay: 4s;
+    text-shadow: 0 0 2px gray;
+    z-index: 99;
+}
+#myst-date-content:after {
+    content: "1993";
+}
+
+[data-slide="15"] img[src="figures/mosaic.png"] {
+    opacity: 0;
+    display: block;
+    text-align: center;
+    margin:auto;
+    -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+    -webkit-transition-delay: 2s;
+}
+[data-slide="15"] .mosaic-text {
+    -webkit-transition: opacity 0.5s;
+    -webkit-transition-delay: 2s;
+    opacity: 0;
+}
+#container[data-currentslide="15"] [data-slide="15"] img[src="figures/myst.jpg"],
+#container[data-currentslide="16"] [data-slide="15"] img[src="figures/myst.jpg"]
+ {
+    opacity: 1;
+}
+
+#container[data-currentslide="15"] [data-slide="15"] p {
+    color: lightyellow;
+}
+/* 16: slide up to Mosaic */
+#container[data-currentslide="16"] [data-slide="15"] img[src="figures/mosaic.png"] {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -100px, 0);
+}
+#mosaic-container {
+    position: absolute; 
+    top: -768px; 
+    width: 1024px;
+    padding: 0;
+    margin:0;
+    -webkit-transition: -webkit-transform: .5s;
+}
+#container.slide16 .myst-text {
+    opacity: 0;
+}
+#container[data-currentslide="16"] .mosaic-text {
+    opacity: 1;
+}
+/* Slide the date up further */
+#container[data-currentslide="16"] #myst-date {
+    -webkit-transform: translate3d(0, -500px, 0);
+}
+/* Slide Mosaic down */
+#container[data-currentslide="16"] #mosaic-container {
+    -webkit-transform: translate3d(0, 200px, 0);
+}
+
+#container[data-currentslide="16"] {
+    -webkit-transform: translate3d(0, 500px, 0);
+}
+
+#container[data-currentslide="17"] #myst-date {
+    -webkit-transition-delay: 0s;
+    -webkit-transform: translate3d(1070px, 500px, 0);
+    z-index: 4;
+}
+
+#container[data-currentslide="17"] {
+    -webkit-transform: translate3d(0, 1150px, 0);
+}
+[data-slide="17"] {
+    top: -1024px;
+}
+/* Click here */
+[data-slide="17"] a {
+    top: -1024px;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+}
+
+#container[data-currentslide="17"] #mosaic-container {
+    -webkit-transform: translate3d(0, 200px, 0);
+}
+#container[data-currentslide="17"] [data-slide="15"] img[src="figures/mosaic.png"] {
+    -webkit-transform: translate3d(0, -100px, 0);
+}
+[data-slide="17"] {
+    -webkit-transition: opacity 1s;
+}
+[data-slide="17"] img[src="figures/underconstruction.gif"] {
+    display: block;
+    margin: auto;
+}
+#container.slide18 [data-slide="17"] {
+    opacity: 0;
+}
+#container.slide18 #myst-date-content:after {
+    content: "1996";
+}
+#container.slide19 {
+    -webkit-transform: translate3d(0, -500px, 0);
+}
+[data-slide="18"], [data-slide="18"] img {
+    text-align: right;
+}
+[data-slide="18"] img,
+[data-slide="20"] img  {
+    margin-top: -10px;
+    display: block;
+    float: right;
+    -webkit-box-shadow: 10px 0px 50px rgba(50,50,50,1);
+}
+#container.slide20 {
+    -webkit-transform: none;
+}
+#container.slide21 [data-slide="18"],
+#container.slide21 [data-slide="20"],
+#container.slide21 #myst-date {
+    opacity: 0;
+}
+
+#container.slide21 {
+    -webkit-transform: none;
+}
+[data-slide="21"] cite { 
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+#container.slide22 [data-slide="21"] {
+    opacity: 0;
+}
+#container.slide22 [data-slide="22"] header,
+#container.slide22 [data-slide="22"] img {
+    opacity: 1;
+}
+[data-slide="22"] header {
+    font-size: 40px;
+    opacity: 0;
+    text-align: center;
+} 
+[data-slide="22"] img { 
+    opacity: 0;
+}
+
+#container.slide24 [data-slide="22"] {
+    display: none;
+}
+#container.slide23 {
+    -webkit-transform: translate3d(-924px, 0, 0);
+}
+
+[data-slide="23"] {
+    left: 1090px;
+    top: -600px;
+    height: 2000px;
+     -webkit-transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform .3s ease-in-out, opacity .3s, height .3s;
+}
+
+.table {
+    display: table;
+    vertical-align: top;
+    width: 460px;
+    height: 100%;
+}
+.left {
+    text-align: right;
+    float: left;
+}
+
+.table p, .table dl {
+    display: table-cell;
+    vertical-align: middle;
+}
+.right {
+    float: left;
+}
+.black {
+    background: black;
+    color: white;
+}
+.white {
+    background: white;
+    color: black;
+}
+
+[data-slide="23"] p {
+    padding: 0;
+}
+[data-slide="23"] dl {
+    font-size: 30px;
+}
+
+#container.slide24 {
+    background: black;
+}
+#container.slide24 [data-slide="23"] {
+    -webkit-transform: rotate(90deg) translate3d(0, 1000px, 0);
+
+}
+[data-slide="24"] {
+    left: 983px;
+}
+.last-date {
+    color: white;
+    display: inline-block;
+    margin-top: 475px;
+    font-size: 300px;
+    opacity: 0;
+    -webkit-transition-delay: 1s;
+}
+#container.slide24 .last-date {
+    opacity: 1;
+}
+#container.slide25 {
+    -webkit-transform: none;
+}
+#container.slide25 .last-date {
+    opacity: 0;
+}
+
+#container.slide25 [data-slide="23"] dl,
+#container.slide25 [data-slide="23"] p {
+    display: none;
+}
+
+[data-slide="25"] p {
+    -webkit-transition: opacity .5s;
+}
+
+[data-slide="26"] .c17 {
+    font-size: 90px;
+    letter-spacing: -6px;
+    line-height: 1em;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    padding-top: 0;
+}
+[data-slide="26"] .drop {
+    font-size: 240px;
+    letter-spacing: -10px;
+    position: relative;
+    top: 55px;
+    font-style: normal;
+    left: 20px;
+    font-weight: 100;
+}
+#container.slide26 [data-slide="25"] p {
+    opacity: 0;
+}
+#container.slide26 .c17 {
+    opacity: 1;
+}
+#advance {
+    margin-left: 18px;
+}
+
+#container.slide27 {
+/*    -webkit-transform: rotate(-90deg) translate3d(-350px, -400px, 0); */
+}
+#container.slide27 [data-slide="26"] {
+    visibility: hidden;
+}
+[data-slide="27"] {
+/*    -webkit-transform: rotate(90deg);  */
+}
+#expand {
+    -webkit-transition: opacity .2s;
+}
+#advance {
+    -webkit-transition: opacity .2s;
+    -webkit-transition-delay: 1s;
+}
+#container.slide28 #expand,
+#container.slide28 #advance {
+    opacity: 0;
+}
+#container.slide28 [data-slide="23"] {
+    opacity: 0;
+}
+#container.slide28 [data-slide="29"] {
+    opacity: 0;
+}
+[data-slide="29"] p,
+[data-slide="29"] img  {
+    -webkit-transition: opacity .2s;
+
+
+}
+#container.slide29 [data-slide="29"] {
+    opacity:1;
+}
+[data-slide="29"] img {
+    -webkit-transition-delay: 4s;
+}
+
+#container.slide29 {
+    -webkit-transform: none;
+}
+
+#container.slide30 {
+    -webkit-transform: translate3d(0, -350px, 0);
+}
+
+[data-slide="29"] img {
+    border: 2px solid gray;
+    margin: 40px auto;
+    display: block;
+    -webkit-box-shadow: 10px 0px 50px rgba(50,50,50,.2);
+}
+
+#container.slide31 {
+    -webkit-transform: translate3d(0, -1000px, 0);
+}
+#container.slide32 {
+    -webkit-transform: translate3d(0, -1300px, 0);
+}
+#container.slide33 {
+    -webkit-transform: translate3d(0, -1500px, 0);
+}
+#container.slide34 {
+    -webkit-transform: translate3d(0, -2500px, 0);
+}
+#container.slide34 blockquote {
+    opacity: 1;
+}
+[data-slide="34"] {
+    top: 2400px;
+}
+[data-slide="34"] blockquote {
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    -webkit-transition-delay: 2s;
+}
+[data-slide="34"] blockquote p {
+    padding-bottom: 1em;
+}
+[data-slide="34"] blockquote cite {
+    -webkit-transition-delay: 3s;
+    text-align: right;
+}
+
+
+#container.slide31 .w5 {
+    -webkit-transform: translate3d(1600px, 0, 0);    
+}
+
+#pinsky p {
+    text-align: left;
+    margin-left: 80px;
+    line-height: 50px;
+}
+
+
+/* Other styles */
+#article1, #map1, #map2 {
+    -webkit-box-shadow: 10px 0px 50px rgba(50,50,50,1);
+    opacity: 0; 
+}
+
+.w1, .w2, .w3, .w4, .w5 {
+    -webkit-transition: -webkit-transform;
+    display: inline-block;
+}
+.w1 {
+    -webkit-transition-delay: 2s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-function: ease-in;
+}
+.w2 {
+    -webkit-transition-delay: 1.75s;
+    -webkit-transition-duration: 1.5s;
+    -webkit-transition-function: ease-out;
+}
+.w3 {
+    -webkit-transition-delay: 1.5s;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-function: ease-in-out;
+}
+.w4 {
+    -webkit-transition-delay: 1.33s;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-function: ease-in-out;
+}
+.w5 {
+    -webkit-transition-delay: 3s;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-function: ease-in-out;
+}
